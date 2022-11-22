@@ -32,7 +32,7 @@ libclassloops.so: basicClassification.o advancedClassificationLoop.o
 	gcc -shared -o libclassloops.so basicClassification.o advancedClassificationLoop.o
 
 main.o: main.c NumClass.h
-	gcc $(FLAGS) -c main.c
+	gcc $(FLAGS) -fPIC -c main.c
 
 advancedClassificationLoop.o: advancedClassificationLoop.c NumClass.h
 	gcc $(FLAGS) -fPIC -c advancedClassificationLoop.c
