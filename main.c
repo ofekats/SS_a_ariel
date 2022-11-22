@@ -4,7 +4,6 @@
 
 int main()
 {
-    printf("Enter 2 numbers:");
     int num1, num2 =0;
     scanf("%d", &num1);
     scanf("%d", &num2);
