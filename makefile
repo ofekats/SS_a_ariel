@@ -1,6 +1,6 @@
 FLAGS = -Wall -g
 
-all: libclassloops.so libclassrec.so libclassrec.a libclassloops.a maindrec maindloop mains loopd recursived recursives loops
+all: maindrec maindloop mains loopd recursived recursives loops libclassloops.so libclassrec.so libclassrec.a libclassloops.a 
 
 loops: libclassloops.a
 
