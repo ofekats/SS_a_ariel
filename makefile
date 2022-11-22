@@ -32,16 +32,16 @@ libclassloops.so: basicClassification.o advancedClassificationLoop.o
 	gcc -shared -o libclassloops.so basicClassification.o advancedClassificationLoop.o
 
 main.o: main.c NumClass.h
-	gcc $(FLAGS) -c main.c
+	gcc $(FLAGS) -fPIC -c main.c
 
 advancedClassificationLoop.o: advancedClassificationLoop.c NumClass.h
-	gcc $(FLAGS) -c advancedClassificationLoop.c
+	gcc $(FLAGS) -fPIC -c advancedClassificationLoop.c
 
 advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
-	gcc $(FLAGS) -c advancedClassificationRecursion.c
+	gcc $(FLAGS) -fPIC -c advancedClassificationRecursion.c
 
 basicClassification.o: basicClassification.c NumClass.h
-	gcc $(FLAGS) -c basicClassification.c
+	gcc $(FLAGS) -fPIC -c basicClassification.c
 
 .PHONY: clean all
 
